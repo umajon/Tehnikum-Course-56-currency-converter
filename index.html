@@ -1,0 +1,46 @@
+<!-- Задача: Создать свой конвертер валют 
+<Блок схема, нужно  "Название" вкладки и страницы, название и поле основной валюты 
+которую будём вводить, 3 типа валюты в которую будет выводить для конвертации.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <h1>Currency Converter</h1>
+    <form>
+        <!-- Сюда вводим USD -->
+        <p>Date: 15.09.2024</p>
+        <label for="usdValue"> USD ($) </label>
+        <input type="number" id="usdValue" placeholder="Enter USD">
+    </form>
+    <div>
+        <!-- Здесь будет отображаться конвертированная сумма в EUR -->
+        <p>BTC amount: <span id="btcValue">0</span></p>
+
+        <!-- Здесь будет отображаться конвертированная сумма в EUR -->
+        <p>ETH amount: <span id="ethValue">0</span></p>
+        
+        <!-- Здесь будет отображаться конвертированная сумма в EUR -->
+        <p>EUR amount: <span id="eurValue">0</span></p>
+        
+        <!-- Здесь будет отображаться конвертированная сумма в RUB -->
+        <p>RUB amount <span id="rubValue">0</span></p>
+
+        <!-- Здесь будет отображаться конвертированная сумма в UZS -->
+        <p>UZS amount: <span id="uzsValue">0</span></p>
+    </div>
+    <script src="./calc.js"> </script>
+
+</body>
+
+</html>
